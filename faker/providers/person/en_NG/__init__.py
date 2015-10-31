@@ -1,0 +1,143 @@
+from __future__ import unicode_literals
+from .. import Provider as PersonProvider
+
+
+class Provider(PersonProvider):
+    formats_female = (
+        '{{first_name_female}} {{first_name_male}}',
+        '{{first_name_female}} {{first_name_male}}',
+        '{{first_name_female}} {{first_name_male}}',
+        '{{first_name_female}} {{first_name_male}}',
+        '{{prefix_female}} {{first_name_female}} {{first_name_male}}',
+        '{{prefix_female}} {{first_name_female}} {{first_name_male}}',
+    )
+    
+    formats_male = (
+        '{{first_name_male}} {{first_name_male}}',
+        '{{first_name_male}} {{first_name_male}}',
+        '{{first_name_male}} {{first_name_male}}',
+        '{{first_name_male}} {{first_name_male}}',
+        '{{prefix_male}} {{first_name_male}} {{first_name_male}}',
+        '{{prefix_male}} {{first_name_male}} {{first_name_male}}',
+    )
+    
+    formats = formats_male + formats_female
+    
+    first_names_female = (
+        'Abigal', 'Abosede', 'Adejoke', 'Adeola', 'Adeshewa', 'Aduni', "Aina'u", 
+        'Aisha', 'Aishah', 'Ajuma', 'Amaka', 'Amina', 'Angela', 'Asabe', 'Asema', 
+        'Asibi', 'Asmau', 'Augustina', 'Barakat', 'Bashari', 'Bashira', 'Beauty', 
+        'Bilikisu', 'Binji', 'Binta', 'Blessing', 'Bola', 'Bukola', 'Cecilia', 
+        'Chika', 'Chinyere', 'Chioma', 'Christiana', 'Cynthia', 'Diana', 'Dorcas', 
+        'Dupe', 'Elizabeth', 'Emem', 'Emmanuela', 'Ene', 'Esther', 'Eukeria', 
+        'Everlyn', 'Faith', 'Faiza', 'Falilatu', 'Farida', 'Fatima', 'Fauziya', 
+        'Favour', 'Felicia', 'Feyishara', 'Firdausi', 'Folake', 'Funke', 'Funmilayo', 
+        'Gift', 'Gimbiya', 'Grace', 'Habiba', 'Hadiza', 'Hafsat', 'Halima', 'Hamamatu', 
+        'Hamaza', 'Hannatu', 'Hasina', 'Hassana', 'Haulatu', 'Hauwa', 'Hayatu', 
+        'Helen', 'Hussaina', 'Ibatu', 'Ifeoma', 'Ikram', 'Imaobong', 'Jamila', 
+        'Jane', 'Janet', 'Jidda', 'Joy', 'Judith', 'Juliet', 'Jumoke', 'Khadijat', 
+        'Kike', 'Kubura', 'Kudirat', 'Kunle', 'Ladi', 'Lami', 'Lillian', 'Lubabatu', 
+        'Lydia', 'Magret', 'Maimuna', 'Mairo', 'Mary', 'Maryam', 'Maureen', 'Medinah', 
+        'Mercy', 'Mojishola', 'Muffida', 'Muniratu', 'Nafisa', 'Nevan', 'Ngozi', 'Ogechi', 
+        'Olasumbo', 'Oluwakemi', 'Opeyemi', 'Oyinye', 'Patience', 'Paulina', 'Peace', 
+        'Percy', 'Racheal', 'Rahila', 'Rahina', 'Ramatu', 'Rashidat', 'Rebeca', 
+        'Rejoice', 'Rhoda', 'Rita', 'Ronke', 'Rukaiya', 'Rukayya', "Sa'adatu", 
+        'Sabitu', 'Sada', 'Sade', 'Sadiya', 'Safiya', 'Sakina', 'Salamatu', 'Samira', 
+        'Sara', 'Sarah', 'Serina', 'Shami', 'Shelewa', 'Sheri', 'Somaiya', 'Sophiat', 
+        'Stella', 'Tabitha', 'Tamuno', 'Tawa', 'Tayo', 'Theresa', 'Tina', 'Tinuke', 
+        'Tolu', 'Tope', 'Toyin', 'Umaira', 'Uwani', 'Vashi', 'Veronica', 'Victoria', 
+        'Winnie', 'Yemisi', 'Yetunde', 'Yinka', 'Zainab', 'Zara', "Zara'u", 
+        'Zulaiha', 'Zulkifilu'
+    )
+    
+    first_names_male = (
+        'Abalaka', 'Abashe', 'Abba', 'Abbas', 'Abdallahi', 'Abdu', 'Abdufaragai', 
+        'Abdulazeez', 'Abdulaziz', 'Abdulganiyu', 'Abdulhakeem', 'Abdulhamid', 
+        'Abdulkadir', 'Abdulkadiri', 'Abdulkarim', "Abdull'Aziz", 'Abdullah', 
+        'Abdullahi', 'Abdulmalik', 'Abdulmumeen', 'Abdulmumini', 'Abdulrahman', 
+        'Abdulrasheed', 'Abdulrazak', 'Abdulrazaq', 'Abdulsalam', 'Abdulwahab', 
+        'Abdusalam', 'Abe', 'Abiodun', 'Abubakar', 'Abuk', 'Adam', 'Adamu', 
+        'Adegbenro', 'Adeiza', 'Adepegba', 'Adesoji', 'Adetunji', 'Adnan', 'Ado', 
+        'Agbonika', 'Ahmad', 'Ahmadu', 'Ahmed', 'Aji', 'Akilu', 'Akinyimika', 
+        'Akpan', 'Al-Hussain', 'Al-Mujtabah', 'Alan', 'Alasan', 'Alex', 'Alhassan', 
+        'Ali', 'Aliyu', 'Alkali', 'Almu', 'Amadu', 'Amar', 'Amasaye', 'Aminu', 
+        'Ammani', 'Anas', 'Anibilowo', 'Animashaun', 'Apewalen', 'Arabi', 'Argungu', 
+        'Armayau', 'Ashiru', 'Atiku', 'Audu', 'Aujara', 'Auwal', 'Auwalu', 'Azeez', 
+        'Baba', 'Babahardawa', 'Babangida', 'Babanliti', 'Babura', 'Badaru', 
+        'Baffah', 'Baidu', 'Baita', 'Bako', 'Bakori', 'Bala', 'Balami', 'Balarabe', 
+        'Bamanga', 'Banki', 'Bara', 'Barde', 'Bashir', 'Basil', 'Basiru', 'Baton', 
+        'Bature', 'Bawa', 'Bayero', 'Bazariye', 'Bello', 'Beneditte', 'Bewul', 
+        'Bichi', 'Bilyaminu', 'Bishir', 'Bolaji', 'Buba', 'Buhari', 'Bukar', 
+        'Bunkure', 'Bura', 'Burji', 'Burkullu', 'Carpenter', 'Chiroma', 'Chiweuba', 
+        'Chonoko', 'Dahir', 'Dahiru', 'Dakura', 'Dalha', 'Dalhatu', "Dan'Asabe", 
+        "Dan'Umma", 'Danazumi', 'Dandare', 'Daneji', 'Dangambo', 'Daniel', 'Danja', 
+        'Danjada', 'Danjuma', 'Danladi', 'Danlami', 'Danpullo', 'Dantata', 'Danyaro', 
+        'Dattijo', 'Dauda', 'Dawaki', 'Dawha', 'Dembe', 'Dembo', 'Dikko', 'Diso', 
+        'Dogara', 'Dutse', 'El-Nafaty', 'El-Yakub', 'Elahi', 'Elijah', 'Emmanuel', 
+        'Fabinu', 'Fada', 'Fagam', 'Fagge', 'Faisal', 'Fanisau', 'Farouk', 'Farouq', 
+        'Faruk', 'Felix', 'Festus', 'Foyeke', 'Fuad', 'Funtua', 'Gafta', 'Gaiyan', 
+        'Galadanchi', 'Galadima', 'Gali', 'Gambo', 'Gana', 'Gano', 'Garba', 'Gaya', 
+        'Gezawa', 'Ghali', 'Gidado', 'Giginyu', 'Guda', 'Gulu', 'Gumel', 'Gurjiya', 
+        'Gusau', 'Gwadabe', 'Gwamna', 'Gwandu', 'Habeeb', 'Habib', 'Habibu', 
+        'Habu', 'Hafiz', 'Hafizu', 'Hago', 'Haladu', 'Haliru', 'Hambali', 'Hamidu', 
+        'Hamisu', 'Hamma', 'Hamza', 'Hantsi', 'Harbo', 'Haro', 'Haruna', 'Hashidu', 
+        'Hashim', 'Hashimu', 'Hassan', 'Hausawa', 'Hisham', 'Hossen', 'Hudu', 
+        'Hussain', 'Hussaini', 'Huzaimu', 'Ibiloye', 'Ibrahim', 'Idrees', 'Idris', 
+        'Iguda', 'Iliyas', 'Iliyasu', 'Ilori', 'Ilu', 'Imam', 'Imamu', 'Imrana',
+        'Indabawa', 'Inname', 'Inusa', 'Inuwa', 'Isa', 'Isaac', 'Isah', 'Isam', 
+        'Isha', 'Ishaq', 'Ismaeel', 'Ismail', 'Ismaila', 'Isyaku', 'Jaafar', 
+        'Jabi', 'Jabo', 'Jafar', 'Jafaru', 'Jahun', 'Jalli', 'Jambo', 'James', 
+        'Jamil', 'Jamilu', 'Japheth', 'Jazuli', 'Jere', 'Jev', 'Jibril', 'Jibrin', 
+        'Jimeta', 'Jirgi', 'Johnson', 'Joshua', 'Josiah', 'Julius', 'Junaidu', 
+        'Kabeer', 'Kabir', 'Kabiru', 'Kachako', 'Kaile', 'Kallah', 'Kamal', 
+        'Kamaluddeen', 'Kamilu', 'Karamba', 'Karofi', 'Kassim', 'Katanga', 
+        'Kausar', 'Kazaure', 'Kazeem', 'Kehinde', 'Khalid', 'Khalifa', 'Khalipha', 
+        'Kilawa', 'Kinsley', 'Kiru', 'Kiyawa', 'Kojoli', 'Koko', 'Koshe', 'Kulluwa', 
+        'Kundi', 'Kura', 'Kurami', 'Kure', 'Kusaiyu', 'Kwairanga', 'Kwalam', 'Kyari', 
+        'Labaran', 'Ladan', 'Ladodo', 'Lame', 'Lamidi', 'Lawal', 'Lawan', 'Limawa',
+        'Longkam', 'Lukka', 'Lukman', 'Maaruf', 'Magaji', 'Mahe', 'Mahmud', 'Maibe', 
+        'Maidoya', 'Maifada', 'Maigari', 'Maigora', 'Maijamaa', 'Maikudi', 
+        'Mailafiya', 'Maisaje', 'Maitama', 'Maiwada', 'Maiyaki', 'Maji', 'Majidadi', 
+        'Makbul', 'Makeri', 'Makini', 'Malgwi', 'Malik', 'Mammadi', 'Mamman', 
+        'Mamuda', 'Mamudu', 'Mani', 'Mansur', 'Marafa', 'Mari', 'Martins', "Mas'ud", 
+        'Mata', 'Matazu', 'Mbahi', 'Mbatsav', 'Mera', 'Mgbuiya', 'Mijinyawa', 
+        'Mikdad', 'Misbahu', 'Mode', 'Modibbo', 'Modili', 'Modu', 'Monday', 'Moses', 
+        'Moshood', "Mu'azu", 'Mubarak', 'Mudassir', 'Muhammad', 'Muhammed', 'Muhideen', 
+        'Muhktar', 'Muhuyiddini', 'Mukaila', 'Mukhtar', 'Muneer', 'Muntari', 
+        'Murtala', 'Musa', 'Musbahu', 'Mustafa', 'Mustafah', 'Mustapha', 'Mutallab', 
+        'Muzzammil', 'Na-Allah', 'Nabegu', 'Nabila', "Nafi'u", 'Nafiu', 'Nakwalli', 
+        'Nandap', 'Nanshal', 'Naruma', 'Nas', 'Nasidi', 'Nasir', 'Nasiru', 'Nassallah', 
+        'Nauwasi', 'Nayaya', 'Nazeer', 'Nazifi', 'Nazir', 'Naziru', 'Nsu', 'Nuhu', 
+        'Nura', 'Nuraddeen', 'Nurulislam', 'Obadare', 'Odo', 'Ogbonna', 'Ogwoja', 
+        'Oke', 'Okum', 'Olabode', 'Oladuntoye', 'Olaide', 'Olanrewaju', 'Olawale', 
+        'Olu', 'Omar', 'Omoloye', 'Onuh', 'Othman', 'Panshekara', 'Peter', 'Potiskum', 
+        'Prosper', 'Quadri', 'Rabi', 'Rabiu', 'Rabo', 'Rilwan', 'Rilwanu', 'Rimi', 
+        'Ringim', 'Riruwai', 'Rufai', "Sa'ad", "Sa'idu", 'Saadu', "Sabi'u", 'Sabiu', 
+        'Sabo', 'Sadat', 'Sadik', 'Sadiq', 'Safiyanu', 'Sagagi', 'Sagiru', 'Sahabo', 
+        'Sahalu', 'Saheed', 'Said', 'Saiffuddeen', 'Saifullahi', 'Saifur-Rahman', 
+        'Sakwa', 'Sale', 'Saleh', 'Salihi', 'Salihu', 'Salisu', 'Sallau', 'Salman', 
+        'Salmanu', 'Samaila', 'Samanja', 'Sambo', 'Saminu', 'Sammani', 'Samson', 
+        'Samuel', 'Sanda', 'Sani', 'Sanusi', 'Sayaya', 'Shafiu', 'Shahada', 
+        'Shahudi', 'Shaibu', 'Shamsudeen', 'Shawal', 'Shebanyan', 'Shehu', 'Sheka', 
+        'Shettima', 'Shika', 'Shikafi', 'Shittu', 'Shuaibu', 'Sidi', 'Simon', 
+        'Soba', 'Soloman', 'Stephen', 'Sulaiman', 'Sule', 'Suleiman', 'Sunday', 
+        'Sunusi', 'Surajo', 'Tafida', 'Tahir', 'Tajuddeen', 'Tajudeen', 'Takai', 
+        'Tamasi', 'Tanwa', 'Tarauni', "Tasi'u", 'Tersoo', 'Tijjani', 'Timta', 
+        'Tinuuye', 'Tofa', 'Torsar', 'Tsanni', 'Tukur', 'Tukura', 'Turaki', 'Uba', 
+        'Ubaida', 'Ubale', 'Uche', 'Ujam', 'Umar', 'Umma', 'Usaini', 'Usman', 
+        'Usmatu', 'Uzairu', 'Wada', 'Waisu', 'Wakili', 'Waziri', 'Wisso', 'Woji', 
+        'Wudilawa', "Ya'u", 'Yahaya', 'Yahya', 'Yaji', 'Yakasai', 'Yakuba', 
+        'Yakubu', 'Yakunat', 'Yalleman', 'Yanah', 'Yandutse', 'Yaquba', 'Yaro', 
+        'Yasi', 'Yaya', 'Yerima', 'Yola', 'Yuguda', 'Yunusa', "Yusha'u", 'Yushau', 
+        'Yusuf', 'Yusufu', 'Zack', 'Zaharaddeen', 'Zaharadeen', 'Zailani', 
+        'Zakariyau', 'Zakariyya', 'Zangina', 'Zaradeen', 'Zarewa', 'Zauro', 
+        'Zawiyya', 'Zayyad', 'Zayyanu', 'Zimith', 'Zubair', 'Zubairu', 
+    )
+    
+    first_names = first_names_male + first_names_female
+    
+    last_names = first_names_male
+    
+    prefixes_female = ('Mrs.', 'Ms.', 'Miss', 'Dr.', 'Hajia', 'Alhaja')
+    prefixes_male = ('Mr.', 'Dr.', 'Alhaji', 'Alh.')
+    
