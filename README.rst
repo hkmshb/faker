@@ -132,6 +132,7 @@ Included localized providers:
 -  `en\_CA <http://fake-factory.readthedocs.org/en/master/locales/en_CA.html>`__ - English (Canada)
 -  `en\_GB <http://fake-factory.readthedocs.org/en/master/locales/en_GB.html>`__ - English (Great Britain)
 -  `en\_US <http://fake-factory.readthedocs.org/en/master/locales/en_US.html>`__ - English (United States)
+-  `en\_NG <http://fake-factory.readthedocs.org/en/master/locales/en_NG.html>`__ - English (Nigeria)
 -  `es\_ES <http://fake-factory.readthedocs.org/en/master/locales/es_ES.html>`__ - Spanish (Spain)
 -  `es\_MX <http://fake-factory.readthedocs.org/en/master/locales/es_MX.html>`__ - Spanish (Mexico)
 -  `fa\_IR <http://fake-factory.readthedocs.org/en/master/locales/fa_IR.html>`__ - Persian (Iran)

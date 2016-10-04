@@ -6,12 +6,13 @@ class Provider(AddressProvider):
     building_number_formats = ('#', '##', '###')
     street_suffixes = ('Avenue', 'Road', 'Street')
     states = (
-        'Abia', 'Adamawa', 'Akwa Ibom', 'Anambra', 'Bauchi', 'Bayelsa', 
-        'Benue', 'Borno', 'Cross-River', 'Delta', 'Edo', 'Ekiti', 'Enugu', 
-        'Gombe', 'Imo', 'Jigawa', 'Kaduna', 'Kano', 'Katsina', 'Kebbi', 
-        'Kogi', 'Kwara', 'Lagos', 'Nassarawa', 'Niger', 'Ogun', 'Ondo', 
-        'Osun', 'Oyo', 'Plateau', 'Rivers', 'Sokoto', 'Taraba', 'Yobe', 
-        'Zamfara', 'FCT',
+        'Abia',      'Adamawa', 'Akwa Ibom',   'Anambra', 'Bauchi', 'Bayelsa', 
+        'Benue',     'Borno',   'Cross-River', 'Delta',   'Eboyin', 'Edo',
+        'Ekiti',     'Enugu',   'Gombe',       'Imo',     'Jigawa', 'Kaduna', 
+        'Kano',      'Katsina', 'Kebbi',       'Kogi',    'Kwara',  'Lagos', 
+        'Nassarawa', 'Niger',   'Ogun',        'Ondo',    'Osun',   'Oyo', 
+        'Plateau',   'Rivers',  'Sokoto',      'Taraba',  'Yobe',  'Zamfara', 
+        'FCT',
     )
     
     states_abbr = (
